@@ -1,0 +1,81 @@
+<!-- <p>ind-seat works!</p> -->
+
+<div class="legends">
+    <p> <b>Legends</b> </p>
+     <div id="avail">Available <span class="first"></span></div> <br>
+     <div  id="notAvail">Not-Available <span class="eachSeat"></span></div> <br>
+     <div  id="selected">Selected <span></span></div> 
+    <!-- <p> <div></div> Not-Available</p>
+    <p> <div></div> Your Selection</p> -->
+
+</div>
+<button (click)="onLoad()">Select-Seats</button>
+<div id="hall">
+    <p>-------------------------------------------------------------------------------------</p>
+       
+</div>
+<div class="premium">
+
+<div class="left">
+
+
+    <div class="seatArea">
+    
+    
+        <span *ngFor="let s of seatsL; index as i "  class="eachSeat" (click)="bookL(i)" [ngClass]="s.avail? 'first' :''"></span>  
+        
+          
+    </div>
+    <div class="seatArea">
+    
+        <div *ngIf ="this.type === 'premium'; else elseBlock">
+   
+            <span *ngFor="let s of seatsLD; index as i " class="Pm" class="eachSeat"  (click)="bookLD(i)" [ngClass]="s.avail? 'first' :''"  ></span>
+        
+        </div>
+        <ng-template #elseBlock>
+
+            <!-- <span *ngFor="let s of seatsLD; index as i "  class="eachSeat Pseat"   [ngClass]="s.avail? 'first' :''"  ></span> -->
+            <span *ngFor="let s of seatsLD; index as i "  class="eachSeat"   [ngClass]="s.avail? 'first' :'eachSeat'"  ></span>
+        </ng-template>
+
+    
+    </div>
+</div>
+
+<div class="right">
+    <div class="seatArea">
+    
+    
+        <span *ngFor="let s of seatsR; index as i "  class="eachSeat"  (click)="bookR(i)" [ngClass]="s.avail? 'first' :'eachSeat'"></span> 
+    </div>
+    <div class="seatArea">
+    
+        <span *ngFor="let s of seatsRD; index as i "  class="eachSeat"  (click)="bookRD(i)" [ngClass]="s.avail? 'first' :''"></span> 
+
+         
+    </div>
+
+</div>
+
+
+
+</div>
+
+<button (click)="save()">PROCEED</button>
+<p>{{total}}</p>
+<!-- <div class="classic">
+    <div id="seatAreaClassic">
+    
+    
+        <span *ngFor="let s of seats "  class="eachSeat"></span>  
+    </div>
+    <div id="seatAreaClassic">
+    
+    
+        <span *ngFor="let s of seats "  class="eachSeat"></span>  
+    </div>
+</div> -->
+
+
+<!--  -->

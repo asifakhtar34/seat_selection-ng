@@ -1,0 +1,93 @@
+.eachSeat{
+    width: 4px;
+    height: 10px;
+    /* border-top: 15px solid brown; */
+    border-bottom: 5px solid maroon;
+    border-left: 15px solid maroon;
+    border-right: 15px solid maroon;
+
+    margin-left: 20px;
+    margin-bottom: 10px;
+    /* background-color: chartreuse; */
+
+    
+    
+}
+
+.seatArea{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.premium{
+    display: flex;
+    justify-content: space-around;
+}
+
+#seatAreaClassic{
+    margin-bottom: 15px;
+}
+
+.legends{
+    border:2px solid black;
+    width: 150px;
+
+}
+
+.first{
+    width: 4px;
+    height: 10px;
+    /* border-top: 15px solid brown; */
+    border-bottom: 5px solid rgb(91, 150, 3);
+    border-left: 15px solid rgb(91, 150, 3);
+    border-right: 15px solid rgb(91, 150, 3);
+
+    margin-left: 20px;
+    margin-bottom: 10px;
+    /* background-color: chartreuse; */
+}
+
+.disable{
+    width: 4px;
+    height: 8px;
+    /* border-top: 15px solid brown; */
+    border-bottom: 5px solid grey;
+    border-left: 19px solid grey;
+    border-right: 15px solid grey;
+
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+}
+
+.eachSeatP{
+    width: 4px;
+    height: 10px;
+    border-bottom: 5px solid #703fc5 ;
+    border-left: 15px solid #703fc5 ;
+    border-right: 15px solid #703fc5 ;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+.Pm{
+    border-left: 19px solid black ;
+}
+
+.selected{
+    width: 4px;
+    height: 10px;
+    border-bottom: 5px solid green ;
+    border-left: 15px solid green ;
+    border-right: 15px solid green ;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#hall{
+    display: flex;
+    justify-content: center;
+}

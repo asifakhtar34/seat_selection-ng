@@ -1,0 +1,44 @@
+
+
+
+
+<button (click)="disp()">Click Me</button>
+<p>{{msg}}</p>
+
+<fieldset>
+
+    <!-- select seat type -->
+<label for="ticketType">Select Ticket Type </label>
+<select value=""  name="ticketType" [formControl]='type'>
+        <option value="premium"  name="premium">Premium</option>
+        <option value="classic" name="classic">Classic</option>
+ </select>
+ &nbsp;
+ &nbsp;
+ &nbsp;
+
+<!-- select number of seats -->
+<label for="ticketType">No. of Seats </label>
+
+    <select value=""  name="seats" [formControl]='num'>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+    
+    
+    </select>
+</fieldset>
+
+<p>seat Type: {{type.value}}</p>
+<p>No. of seats: {{num.value}}</p>
+
+
+
+<app-ind-seat [type]="type.value"  [num]="num.value" ></app-ind-seat>
+
+
+
